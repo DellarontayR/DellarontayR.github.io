@@ -65,4 +65,10 @@
 .fancyfont{
     font-family: 'Cookie',cursive;
     color:#fff;
+    margin-top:10px;
+}
+
+.outerAbout{
+    text-align: center;
+    font-family: 'Cookie',cursive;
 }
