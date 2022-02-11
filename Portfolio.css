@@ -12,7 +12,8 @@
 }
 
 .card-topped{
-    margin-top:30px;
+    margin-top:10px;
+    margin-bottom:10px;
 }
 
 .nameBody{
@@ -24,10 +25,6 @@
     /* background-position: 50% 80%; */
     margin:0;
     padding:0;
-
-    
-    
-
 }
 
 .outerName{
