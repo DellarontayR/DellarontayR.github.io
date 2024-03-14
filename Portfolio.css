@@ -27,6 +27,11 @@
     padding:0;
 }
 
+.mookieBackground{
+    background-image: url("goodmookie.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+}
 .outerName{
     width:100%;
     /* Center nameBody */
