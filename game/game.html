@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+        <title>Children's games</title>
+    
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+            rel="stylesheet" />
+        <link rel="icon" href="../portrait.jpg" type="image/gif">
+
+        <!-- Meta Tags for Social Media -->
+        <meta property="og:title" content="Dellarontay's Portfolio" />
+        <meta property="og:description"
+            content="A collection of Children's games created by Dellarontay Readus" />
+        <meta property="og:image" content="https://dellarontayr.github.io/imgRetriever.png" />
+        <meta property="og:url" content="https://dellarontayr.github.io/index.html" />
+        <meta property="og:type" content="profile" />
+        <meta name="twitter:card" content="summary_large_image" />
+    
+        <meta property="profile:first_name" content="Dellarontay" />
+        <meta property="profile:last_name" content="Readus" />
+		<style>
+			body { margin: 0; }
+		</style>
+        <script type="importmap">
+            {
+              "imports": {
+                "three": "https://unpkg.com/three@v0.181.1/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@v0.181.1/examples/jsm/"
+              }
+            }
+          </script>
+	</head>
+	<body>
+        <div class="container" style="position:absolute;bottom:25px;font-size:50px;">
+            <div class="row" style="justify-content: center;">
+                <button id="up"><i class="fas fa-chevron-up bg-light"></i></button>
+            </div>
+
+            <div class="row" style="justify-content: center;">
+                <button id="left"><i class="fas fa-chevron-left bg-light"></i></button>
+                <button id="down"><i class="fas fa-chevron-down bg-light"></i></button>
+                <button id="right"><i class="fas fa-chevron-right bg-light"></i></button>
+            </div>
+        </div>
+
+		<script type="module" src="./game.js"></script>
+	</body>
+</html>
