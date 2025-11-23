@@ -73,3 +73,41 @@
     text-align: center;
     font-family: 'Cookie',cursive;
 }
+
+
+/* Play gif of app while hovering over image */
+.card-img-top{
+    height:25rem; 
+    width:100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+
+.ohdCard{
+
+    background-image:url("gifs/OHD_siteV3_display.gif");
+    background-image:url("OHDHomeScreen.png");
+}
+
+.ohdCard:hover {
+    background-image:url("gifs/OHD_siteV3_display.gif");
+}
+
+.mookieCard{
+    background-image:url("gifs/MDough1.gif");
+    background-image:url("colM0.jpg");
+}
+
+.mookieCard:hover{
+    background-image:url("gifs/MDough1.gif");
+}
+
+.flickrCard{
+    background-image:url("gifs/FlickrApp.gif");
+    background-image:url("imgRetriever.png");
+}
+
+.flickrCard:hover{
+    background-image:url("gifs/FlickrApp.gif");
+}

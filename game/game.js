@@ -1,8 +1,5 @@
 import * as THREE from 'three';
 
-// import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-// import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
@@ -11,6 +8,8 @@ renderer.setSize( window.innerWidth, window.innerHeight );
 renderer.setAnimationLoop( animate );
 document.body.appendChild( renderer.domElement );
 
+const cssRender = new THREE.WebGL3DRenderTarget();
+
 const geometry = new THREE.BoxGeometry( 1, 1, 1 );
 const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
 const cube = new THREE.Mesh( geometry, material );
@@ -18,17 +17,13 @@ scene.add( cube );
 
 camera.position.z = 5;
 
-
-// const controls = new OrbitControls( camera, renderer.domElement );
-// const loader = new GLTFLoader();
-
 function animate() {
-	// requestAnimationFrame( animate );
 
 	cube.rotation.x += 0.01;
 	cube.rotation.y += 0.01;
 
 	renderer.render( scene, camera );
+    // requestAnimationFrame( animate );
 }
 // renderer.setAnimationLoop( animate );
 
@@ -61,16 +56,21 @@ function moveRight(event){
 function onDocumentKeyDown(event) {
     var keyCode = event.which;
     if (keyCode == 87) {
+        moveUp(event);
         cube.position.y += ySpeed;
     } else if (keyCode == 83) {
         cube.position.y -= ySpeed;
+        moveDown(event);
     } else if (keyCode == 65) {
         cube.position.x -= xSpeed;
+        moveLeft(event);
     } else if (keyCode == 68) {
         cube.position.x += xSpeed;
+        moveRight(event);
     } else if (keyCode == 32) {
         cube.position.set(0, 0, 0);
     }
+    event.preventDefault();
 };
 
 animate();
